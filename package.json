@@ -1,0 +1,20 @@
+{
+  "name": "codely",
+  "version": "1.0.0",
+  "description": "A place to master different coding concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snehasish Dawn",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0"
+  }
+}
