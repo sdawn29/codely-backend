@@ -61,7 +61,7 @@ router.put('/:id', [auth, admin], async (req, res) => {
     });
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id',[auth, admin], async (req, res) => {
     const question = await Question.findByIdAndRemove(req.params.id);
 
     if(!question) return res.status(404).send({

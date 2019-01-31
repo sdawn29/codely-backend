@@ -13,31 +13,6 @@ const questionSchema = new mongoose.Schema({
         required: true,
         minlength:5,
     },
-    inputFormat: {
-        type: String,
-        required: true,
-        minlength:5,
-    },
-    constraints: {
-        type: String,
-        required: true,
-        minlength:5,
-    },
-    ouputFormat: {
-        type: String,
-        required: true,
-        minlength:5,
-    },
-    sampleInput: {
-        type: String,
-        required: true,
-        minlength:5,
-    },
-    sampleOutput: {
-        type: String,
-        required: true,
-        minlength:5,
-    },
     testcases: {
         type: [
             new mongoose.Schema({
@@ -69,9 +44,6 @@ function validateQuestion(question) {
     const schema = {
         title: Joi.string().required(),
         body: Joi.string().required(),
-        inputFormat:  Joi.string(),
-        constraints: Joi.string(),
-        ouputFormat: Joi.string(),
         testcases: Joi.array().items(Joi.object({
             body: Joi.string().required(),
             stdin: Joi.string().required(),
