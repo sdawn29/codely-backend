@@ -9,7 +9,7 @@
   "author": "Snehasish Dawn",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.2",
+    "bcrypt": "^5.0.0",
     "compile-run": "^2.3.0",
     "config": "^3.0.1",
     "cors": "^2.8.5",
